@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA FASHION | Diwali Mega Sale 2026</title>
+    <meta name="description" content="Discover exquisite traditional and modern festive wear at AURA FASHION. Celebrate Diwali 2026 with up to 60% off on ethnic collections.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <p><i class="fas fa-sparkles"></i> Diwali Mega Sale Live! Free Shipping on Orders Above ₹999 | Use Code: <strong>DIWALI2026</strong> <i class="fas fa-sparkles"></i></p>
+    </div>
+
+    <!-- Section 1: Navigation Bar -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">
+                <a href="#home">AURA <span>FASHION</span></a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#products" data-filter="women">Women</a></li>
+                <li><a href="#products" data-filter="men">Men</a></li>
+                <li><a href="#products" data-filter="kids">Kids</a></li>
+                <li><a href="#collections">New Arrivals</a></li>
+                <li><a href="#offers">Offers</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search festive wear...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                <button class="icon-btn wishlist-icon-btn" title="Wishlist">
+                    <i class="far fa-heart"></i>
+                    <span class="badge" id="wishlistCount">0</span>
+                </button>
+                <button class="icon-btn cart-icon-btn" id="cartToggle" title="Shopping Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="badge" id="cartCount">0</span>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <h3>AURA FASHION</h3>
+            <button id="closeMobileMenu"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#products" class="mobile-link" data-filter="women">Women</a></li>
+            <li><a href="#products" class="mobile-link" data-filter="men">Men</a></li>
+            <li><a href="#products" class="mobile-link" data-filter="kids">Kids</a></li>
+            <li><a href="#collections" class="mobile-link">New Arrivals</a></li>
+            <li><a href="#offers" class="mobile-link">Offers</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section 2: Hero Banner -->
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="sub-heading"><i class="fas fa-diwan"></i> Festive Season Celebration</span>
+                    <h1>Celebrate Diwali in Style!</h1>
+                    <p>Discover the Perfect Festive Look with AURA FASHION. Handcrafted ethnic wear designed for your special moments.</p>
+                    <div class="offer-badge">UP TO 60% OFF</div>
+                    <div class="hero-btns">
+                        <a href="#products" class="btn btn-primary">Shop Now <i class="fas fa-arrow-right"></i></a>
+                        <a href="#collections" class="btn btn-outline">Explore Collection</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&q=80&w=800" alt="Festive Indian Fashion Model">
+                    <div class="floating-diya-badge">
+                        <i class="fas fa-fire-flame-curved"></i>
+                        <span>Diwali Special</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Diwali Special Offers -->
+        <section id="offers" class="section special-offers">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Diwali Special Offers</h2>
+                    <p>Exclusive festive discounts tailored just for your celebration</p>
+                </div>
+                <div class="offers-grid">
+                    <div class="offer-card offer-women">
+                        <div class="offer-content">
+                            <span class="discount-tag">Flat 30% OFF</span>
+                            <h3>Women's Collection</h3>
+                            <p>Exquisite sarees, graceful lehengas, and designer anarkalis.</p>
+                            <a href="#products" class="btn-text" data-filter="women">Explore Women <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="offer-card offer-men">
+                        <div class="offer-content">
+                            <span class="discount-tag">Flat 40% OFF</span>
+                            <h3>Men's Collection</h3>
+                            <p>Royal sherwanis, classic kurtas, and festive jacket sets.</p>
+                            <a href="#products" class="btn-text" data-filter="men">Explore Men <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="offer-card offer-kids">
+                        <div class="offer-content">
+                            <span class="discount-tag">Flat 50% OFF</span>
+                            <h3>Kids' Collection</h3>
+                            <p>Adorable traditional outfits for your little ones to shine.</p>
+                            <a href="#products" class="btn-text" data-filter="kids">Explore Kids <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Featured Collections -->
+        <section id="collections" class="section featured-collections">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Featured Collections</h2>
+                    <p>Curated categories for every festive occasion</p>
+                </div>
+                <div class="collections-grid">
+                    <div class="collection-card" data-category="women">
+                        <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&q=80&w=600" alt="Women's Ethnic Wear">
+                        <div class="collection-overlay">
+                            <h3>Women's Ethnic Wear</h3>
+                            <button class="btn btn-sm btn-light filter-trigger" data-filter="women">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="collection-card" data-category="men">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=600" alt="Men's Traditional Wear">
+                        <div class="collection-overlay">
+                            <h3>Men's Traditional Wear</h3>
+                            <button class="btn btn-sm btn-light filter-trigger" data-filter="men">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="collection-card" data-category="kids">
+                        <img src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&q=80&w=600" alt="Kids' Festive Wear">
+                        <div class="collection-overlay">
+                            <h3>Kids' Festive Wear</h3>
+                            <button class="btn btn-sm btn-light filter-trigger" data-filter="kids">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="collection-card" data-category="accessories">
+                        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=600" alt="Accessories">
+                        <div class="collection-overlay">
+                            <h3>Accessories</h3>
+                            <button class="btn btn-sm btn-light filter-trigger" data-filter="accessories">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Trending Products -->
+        <section id="products" class="section trending-products">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Trending Festive Styles</h2>
+                    <p>Handpicked favorites loved by our fashion community</p>
+                </div>
+
+                <!-- Category Filter Buttons -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="women">Women</button>
+                    <button class="filter-btn" data-filter="men">Men</button>
+                    <button class="filter-btn" data-filter="kids">Kids</button>
+                    <button class="filter-btn" data-filter="accessories">Accessories</button>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products injected dynamically via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Diwali Countdown Timer -->
+        <section class="section countdown-section">
+            <div class="container">
+                <div class="countdown-card">
+                    <div class="countdown-header">
+                        <span class="badge-gold"><i class="fas fa-clock"></i> Limited Time Offer</span>
+                        <h2>Diwali Mega Sale Ends In</h2>
+                        <p>Grab your favorite styles before the festive offers expire!</p>
+                    </div>
+                    <div class="countdown-timer" id="countdownTimer">
+                        <div class="time-box">
+                            <span id="days">00</span>
+                            <span class="time-label">Days</span>
+                        </div>
+                        <div class="time-box">
+                            <span id="hours">00</span>
+                            <span class="time-label">Hours</span>
+                        </div>
+                        <div class="time-box">
+                            <span id="minutes">00</span>
+                            <span class="time-label">Minutes</span>
+                        </div>
+                        <div class="time-box">
+                            <span id="seconds">00</span>
+                            <span class="time-label">Seconds</span>
+                        </div>
+                    </div>
+                    <div class="countdown-cta">
+                        <a href="#products" class="btn btn-primary">Shop Sale Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Why Choose Us? -->
+        <section class="section features-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Why Choose AURA FASHION?</h2>
+                    <p>We deliver excellence, authenticity, and unmatched festive elegance</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-gem"></i></div>
+                        <h3>Premium Quality</h3>
+                        <p>Handcrafted using the finest fabrics, intricate embroidery, and traditional weaves.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-tags"></i></div>
+                        <h3>Affordable Prices</h3>
+                        <p>Direct-from-artisan pricing with unbeatable festive discounts and festival deals.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Secure Shopping</h3>
+                        <p>100% secure checkout with encrypted payments and trusted delivery partners.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-undo-alt"></i></div>
+                        <h3>Easy Returns</h3>
+                        <p>Hassle-free 7-day return and exchange policy for complete peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Customer Testimonials -->
+        <section class="section testimonials-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Loved By Our Customers</h2>
+                    <p>Hear what our happy patrons have to say about their festive experience</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"The Designer Silk Saree I bought for Diwali was absolute perfection! The fabric quality and zari work exceeded my expectations. Received so many compliments!"</p>
+                        <div class="customer-info">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150" alt="Priya Sharma">
+                            <div>
+                                <h4>Priya Sharma</h4>
+                                <span>Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Ordered the Men's Ethnic Jacket Set. The fitting was spot on and delivery was lightning fast before Dhanteras. AURA FASHION is my go-to festive store now."</p>
+                        <div class="customer-info">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" alt="Rahul Verma">
+                            <div>
+                                <h4>Rahul Verma</h4>
+                                <span>Delhi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"The Kids' Festive Lehenga looked adorable on my daughter. Comfortable fabric that didn't irritate her skin during the entire Lakshmi puja celebration."</p>
+                        <div class="customer-info">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150" alt="Ananya Iyer">
+                            <div>
+                                <h4>Ananya Iyer</h4>
+                                <span>Bengaluru</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: Newsletter Subscription -->
+        <section class="section newsletter-section">
+            <div class="container newsletter-container">
+                <div class="newsletter-content">
+                    <h2>Get Exclusive Fashion Offers!</h2>
+                    <p>Subscribe to our newsletter and receive special discounts, early access to festive sales, and the latest fashion updates.</p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" id="newsletterEmail" placeholder="Enter your email address..." required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                        <div id="newsletterMessage" class="newsletter-message"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Section 10: Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#home" class="footer-logo">AURA <span>FASHION</span></a>
+                <p>Your ultimate destination for modern ethnic wear and traditional festive clothing. Elevating your celebrations with elegance and style.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Shop All</a></li>
+                    <li><a href="#collections">New Arrivals</a></li>
+                    <li><a href="#offers">Diwali Offers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">FAQ & Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Information</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 45 Festive Avenue, T. Nagar, Chennai - 600017</li>
+                    <li><i class="fas fa-phone-alt"></i> +91 (044) 2834-5678</li>
+                    <li><i class="fas fa-envelope"></i> support@aurafashion.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 AURA FASHION. All Rights Reserved. Designed for Diwali Mega Sale.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <span>|</span>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Side Drawer -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-bag"></i> Your Shopping Bag (<span id="cartDrawerCount">0</span>)</h3>
+            <button class="close-cart" id="closeCart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItemsContainer">
+            <!-- Dynamic cart items will appear here -->
+        </div>
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-subtotal">
+                <span>Subtotal:</span>
+                <span id="cartSubtotalAmount">₹0</span>
+            </div>
+            <p class="cart-shipping-note"><i class="fas fa-truck"></i> You qualify for Free Shipping!</p>
+            <button class="btn btn-primary btn-block" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
